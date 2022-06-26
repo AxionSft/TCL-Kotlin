@@ -1,8 +1,8 @@
 <h1 align="center">
-  <a href="https://github.com/sdxqw/TCL-MDK">TCL-MDK</a>
+  <a href="https://github.com/sdxqw/TCL-Kotlin">TCL-Kotlin</a>
 </h1>
 
-<h4 align="center">Mod development kit for coding Tweaker Clients.</h4>
+<h4 align="center">Mod development kit for coding Tweaker Clients with Kotlin.</h4>
 
 <h3 align="center">
     <a href="#get-start">Get start</a> •
@@ -17,15 +17,22 @@
 If you are here you need to setup our project!. Please follow this steps:
 
 * Open the file "build.gradle"
-* 1 - Change the line 26 with your group id ex: "io.github.axst"
-* 2 - Change the line 19 with your tweaker name or client name (will be the most important part of this setup) (dont touch "mixins.")
-* 3 - Change the line 18 "io.github.axst.launch.TCLTweaker" to your tweaker dir!
-* 4 - Change the line 25 with your client version
+* 1 - Change the line 29 with your group id ex: "io.github.axst"
+* 2 - Change the line 22 with your tweaker name or client name (will be the most important part of this setup) (dont touch "mixins.")
+* 3 - Change the line 21 "io.github.axst.launch.TCLTweaker" to your tweaker dir!
+* 4 - Change the line 28 with your client version
 * Open the file "mixins.tcl.json"
 * 5 - Change the line 5 with your package where mixins should be.
 * 6 - Change the line 6 "mixins.tcl.refmap.json" to "mixins.TWEAKER-OR-CLIENT-NAME-STEP-2.refmap.json" please use the tweaker or client name in step 2!
 * 7 - Now the client should work! have fun learing mixins!
 * 8 - If the client wont start make sure to set the package to MAIN and not API. (IJ IDEA)
+
+## How to use it?
+
+All mixins source goes in src/main/java/path
+All normal client source goes in src/main/kotlin/path
+
+good luck with utils ☠️
 
 ## COMMON ERROR
 
@@ -50,7 +57,7 @@ follow those step:
  
 ![image](https://user-images.githubusercontent.com/94248011/174458486-81236a8a-14af-440a-add3-9ab0b4d39cac.png)
 
-* 2 task > build > build
+* 2 task > build > jar
  
 ![image](https://user-images.githubusercontent.com/94248011/174458537-8fbf1386-6137-401a-b377-21062c3d32e6.png)
 
@@ -100,7 +107,7 @@ thanks to TheKodeToad for his repo so i could fix mine
 
 ## Contributing
 
-Want to help improve TCL-MDK?, but how?:
+Want to help improve TCL-Kotlin?, but how?:
 
 * By making an fork of the project
 * Sharing this repo
