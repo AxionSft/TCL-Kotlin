@@ -30,6 +30,7 @@ If you are here you need to setup our project!. Please follow this steps:
 ## How to use it?
 
 All mixins source goes in src/main/java/path
+
 All normal client source goes in src/main/kotlin/path
 
 good luck with utils ☠️
