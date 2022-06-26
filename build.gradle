@@ -1,4 +1,5 @@
 buildscript {
+	ext.kotlin_version = '1.6.10'
 	repositories {
 		mavenCentral()
 		maven { url 'https://files.minecraftforge.net/maven' }
@@ -6,12 +7,14 @@ buildscript {
 		maven { url 'https://jitpack.io' }
 	}
 	dependencies {
-		classpath 'net.minecraftforge.gradle:ForgeGradle:2.1-SNAPSHOT'
+		classpath 'com.github.asbyth:ForgeGradle:6f53277'
 		classpath 'com.github.xcfrg:MixinGradle:0.6-SNAPSHOT'
+		classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 	}
 }
 
 apply plugin: 'net.minecraftforge.gradle.tweaker-client'
+apply plugin: 'org.jetbrains.kotlin.jvm'
 apply plugin: 'org.spongepowered.mixin'
 apply plugin: 'java'
 
@@ -50,16 +53,21 @@ configurations {
 	tclmdk
 	implementation.extendsFrom tclmdk
 	runtime.extendsFrom tclmdk
+	compile {
+		canBeResolved = true
+	}
 }
 
 dependencies {
 	compileOnly('org.projectlombok:lombok:1.18.24')
+	annotationProcessor('org.projectlombok:lombok:1.18.24')
 	tclmdk('org.spongepowered:mixin:0.7.11-SNAPSHOT') {
 		exclude module: 'launchwrapper'
 		exclude module: 'guava'
 		exclude module: 'gson'
 		exclude module: 'commons-io'
 	}
+	tclmdk("org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version")
 }
 
 processResources {
@@ -99,3 +107,9 @@ jar {
 		}
 	}
 }
+compileKotlin {
+	kotlinOptions {
+		jvmTarget = "1.8"
+	}
+}
+
