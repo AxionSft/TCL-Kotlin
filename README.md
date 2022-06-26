@@ -95,14 +95,15 @@ where put your MyClient.json like:
 ## Key Features
 
 * Good guide!
-* 1.8.9 Optimized tcl for your client!
+* 1.8.9 Optimized tcl for your client to create with mixins!
 * Guide for build it with optfine. (LEGAL!)
 * Example client!
 
 # Thanks
 
 thanks to xcfrg for repo!
-thanks to TheKodeToad for his repo so i could fix mine
+thanks to asbyth for repo!
+thanks to TheKodeToad for his repo so i could fix mine!
 
 ## Contributing
 
