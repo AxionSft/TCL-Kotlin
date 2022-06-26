@@ -30,7 +30,7 @@ minecraft {
 	tweakClass = "${tweakerClass}"
 	mappings = 'stable_22'
 	runDir = 'run'
-	clientJvmArgs = ['-XX:-DisableExplicitGC', '-Xmx1G', '-DFORGE_FORCE_FRAME_RECALC=true']
+	clientJvmArgs = ['-Dmixin.debug=true', '-XX:-DisableExplicitGC', '-Xmx1G', '-DFORGE_FORCE_FRAME_RECALC=true']
 	makeObfSourceJar = false
 }
 
