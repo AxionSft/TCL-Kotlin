@@ -58,7 +58,8 @@ follow those step:
 
 ![image](https://user-images.githubusercontent.com/94248011/174458553-aca7dfcf-8213-4a95-ab61-ab6dff5dab69.png)
 
-* 4 check ![CLICKME](https://github.com/AsarySoftware/TCL-MDK/blob/stable/MyClient.json) and modify only this things:
+
+* 4 check ![CLICK ME](https://github.com/sdxqw/TCL-MDK/blob/master/MyClient.json) and modify only this things:
 * 1: rename the file to your client name.
 * 1-2: "id" -> your client name.
 * 2: "name": "myclient:MyClient:0.1" -> this its the folder and the jar should be name.
