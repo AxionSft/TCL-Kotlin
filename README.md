@@ -2,7 +2,7 @@
   <a href="https://github.com/sdxqw/TCL-Kotlin">TCL-Kotlin</a>
 </h1>
 
-<h4 align="center">Mod development kit for coding Tweaker Clients with Kotlin.</h4>
+<h4 align="center">TCL based on Tweaker Class and Mixins but with Kotlin.</h4>
 
 <h3 align="center">
     <a href="#get-start">Get start</a> •
@@ -40,7 +40,7 @@ good luck with utils ☠️
 if you get this error:
 
 ```java
-TCL-MDK:main:Could not find net.minecraft:minecraftBin:1.8.9.
+TCL-Kotlin:main:Could not find net.minecraft:minecraftBin:1.8.9.
 ```
 
 click the gradle icon. gradle > forgegradle > SetupDecompWorkspace.
