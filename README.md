@@ -7,11 +7,11 @@
 # Start using TCL-Kotlin
 **Check** the guide of [_**TCL-Java**_](https://github.com/AxstSoftware/TCL-Java/wiki)
 
-The only thing that change IS:
+#### The only thing that change IS:
 
-Java path goes only mixins class
+1. Java path goes only mixins class
 
-Kotlin path goes only client class
+2. Kotlin path goes only client class
 
 ## Key Features
 
