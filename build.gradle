@@ -65,8 +65,6 @@ dependencies {
 		exclude module: 'gson'
 		exclude module: 'commons-io'
 	}
-	compileOnly('org.projectlombok:lombok:1.18.24')
-	annotationProcessor('org.projectlombok:lombok:1.18.24')
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version")
 	annotationProcessor("org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version")
 }
