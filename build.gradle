@@ -7,8 +7,8 @@ buildscript {
 		maven { url 'https://jitpack.io' }
 	}
 	dependencies {
-		classpath 'com.github.asbyth:ForgeGradle:6f53277'
-		classpath 'com.github.xcfrg:MixinGradle:0.6-SNAPSHOT'
+		classpath 'com.github.sdxqw:ForgeGradle:f2c5bb338e'
+		classpath 'com.github.sdxqw:MixinGradle:0.6-SNAPSHOT'
 		classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 	}
 }
@@ -19,7 +19,7 @@ apply plugin: 'org.spongepowered.mixin'
 apply plugin: 'java'
 
 String tweakerClass = 'io.github.axst.launch.TCLTweaker'
-String tweaker = 'mixins.tcl'
+String tweaker = 'tcl'
 
 compileJava {
 	sourceCompatibility = targetCompatibility = 8
@@ -39,7 +39,7 @@ minecraft {
 
 mixin {
 	defaultObfuscationEnv notch
-	add sourceSets.main, "${tweaker}.refmap.json"
+	add sourceSets.main, "mixins.${tweaker}.refmap.json"
 }
 
 repositories {
@@ -65,8 +65,6 @@ dependencies {
 		exclude module: 'gson'
 		exclude module: 'commons-io'
 	}
-	compileOnly('org.projectlombok:lombok:1.18.24')
-	annotationProcessor('org.projectlombok:lombok:1.18.24')
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version")
 	annotationProcessor("org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version")
 }
@@ -92,7 +90,7 @@ jar {
 
 jar {
 	manifest.attributes(
-			'MixinConfigs': "${tweaker}.json",
+			'MixinConfigs': "mixins.${tweaker}.json",
 			'TweakClass': "${tweakerClass}",
 			'TweakOrder': 0,
 			'Manifest-Version': 1.0
