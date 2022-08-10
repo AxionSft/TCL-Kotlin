@@ -15,26 +15,22 @@
 
 ## Key Features
 
-* Good guide!
-* 1.8.9 Optimized tcl for your client to create with mixins!
-* Guide for build it with optfine. (LEGAL!)
-* Example client!
+* Easy to use!
+* Clear and simple to follow instructions!
+* Provided with sample code!
 
 # Thanks
 
-thanks to xcfrg for repo!
-
-thanks to asbyth for repo!
-
-thanks to TheKodeToad for his repo so i could fix mine!
-
+thanks to xcfrg for repo!</br>
+thanks to asbyth for repo!</br>
+thanks to TheKodeToad for his repo so i could fix mine!</br>
 based on liquidbounce idea.
 
 ## Contributing
 
-Want to help improve TCL-Kotlin?, but how?:
+Ways to contribute to TCL-Kotlin:
 
-* By making an fork of the project
+* Making an fork of the project
 * Sharing this repo
 * Help improve the guide
 
